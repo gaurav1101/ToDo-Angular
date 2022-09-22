@@ -1,0 +1,14 @@
+<div>
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="Title" class="form-label">ToDo Title</label>
+      <input type="text" [(ngModel)]="title" class="form-control" id="TitleID" name ="title" aria-describedby="emailHelp">
+      <div id="div" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="Desc" class="form-label">Description</label>
+      <input type="text" [(ngModel)]="desc" class="form-control" name ="desc" id="descID">
+    </div>
+    <button type="submit" class="btn btn sm btn-primary">ADD</button>
+  </form>
+</div>

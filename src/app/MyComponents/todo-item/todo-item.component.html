@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h5 [ngClass]="{'strike':!todo.active}">{{todo.title}}</h5>
+    </div>
+    <div class="col">
+      {{todo.desc}}
+    </div>
+    <div class="col">
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckboxClick(todo)">
+        <label class="form-check-label" for="exampleCheck1">mark as done</label>
+      </div>
+    </div>
+    <div class="col">
+      <button class="btn btn-sm btn-danger" (click)="onclick(todo)">DELETE</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class ="my-3">
+<h5 [ngClass]="{'strike':!todo.active}">{{todo.title}}</h5>
+<p>{{todo.desc}}</p>
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckboxClick(todo)">
+    <label class="form-check-label" for="exampleCheck1">mark as done</label>
+  </div>
+<button class="btn btn-sm btn-danger" (click)="onclick(todo)">DELETE</button>
+</div> -->
